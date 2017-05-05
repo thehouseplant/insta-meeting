@@ -1,0 +1,1347 @@
+<div class="uk-container" style="margin-top:20px;">
+    <h1>
+        Scheduler
+        <button style="margin-left:15px;" class="uk-button uk-button-primary" uk-toggle="target: #new-modal">New Appointment</button>
+        <button style="margin-left:15px;" class="uk-button uk-button-secondary" uk-toggle="target: #conference-modal">Conference Room Availability</button>
+    </h1>
+
+    <ul uk-tab>
+        <li><a href="" (click)="yearlyView=true; monthlyView=false; weeklyView=false; dailyView=false">Yearly View</a></li>
+        <li><a href="" (click)="yearlyView=false; monthlyView=true; weeklyView=false; dailyView=false">Monthly View</a></li>
+        <li><a href="" (click)="yearlyView=false; monthlyView=false; weeklyView=true; dailyView=false">Weekly View</a></li>
+        <li><a href="" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">Daily View</a></li>
+    </ul>
+
+    <div *ngIf="yearlyView">
+        <div class="uk-grid-medium uk-child-width-expand@m" uk-grid>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    January 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    February 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    March 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="uk-grid-medium uk-child-width-expand@m" uk-grid>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    April 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td><a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">24</a></td>
+                            <td>25</td>
+                            <td><a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">26</a></td>
+                            <td><a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">27</a></td>
+                            <td><a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">28</a></td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    May 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    June 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="uk-grid-medium uk-child-width-expand@m" uk-grid>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    July 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    August 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    September 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="uk-grid-medium uk-child-width-expand@m" uk-grid>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    October 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    November 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p class="uk-text-small" style="text-align:center;">
+                    December 2017
+                </p>
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>Th</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="monthlyView">
+        <p class="uk-text-small" style="text-align:center;">
+            April 2017
+        </p>
+        <table class="uk-table uk-table-responsive uk-table-divider">
+            <thead>
+                <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>Th</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><br><br><br></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2<br><br><br></td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9<br><br><br></td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>16<br><br><br></td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>23<br><br><br></td>
+                    <td>
+                        <a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">24</a>
+                        <ul class="uk-list uk-list-bullet">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">10:30 - 11:30</a></li>
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">1:30 - 2:30</a></li>
+                        </ul>
+                    </td>
+                    <td>25</td>
+                    <td>
+                        <a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">26</a>
+                        <ul class="uk-list uk-list-bullet">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">11:30 - 12:00</a></li>
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">1:30 - 2:30</a></li>
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">2:30 - 3:30</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">27</a>
+                        <ul class="uk-list uk-list-bullet">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">10:00 - 10:15</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <a class="uk-link" (click)="yearlyView=false; monthlyView=false; weeklyView=false; dailyView=true">28</a>
+                        <ul class="uk-list uk-list-bullet">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">8:30 - 11:45</a></li>
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">3:30 - 5:00</a></li>
+                        </ul>
+                    </td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>30<br><br><br></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="weeklyView">
+        <table class="uk-table uk-table-responsive uk-table-divider">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Sunday (4/23)</th>
+                    <th>Monday (4/24)</th>
+                    <th>Tuesday (4/25)</th>
+                    <th>Wednesday (4/26)</th>
+                    <th>Thursday (4/27)</th>
+                    <th>Friday (4/28)</th>
+                    <th>Saturday (4/29)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td></td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">8:00 - 8:30</a></li>
+                        </ul>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">10:00 - 11:00</a></li>
+                        </ul>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td></td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">2:00 - 3:00</a></li>
+                        </ul>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">4:00 - 4:45</a></li>
+                        </ul>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="dailyView">
+        <table class="uk-table uk-table-responsive uk-table-divider">
+            <thead>
+                <tr>
+                    <th class="uk-table-small"></th>
+                    <th class="uk-table-expand">Tuesday, April 25, 2017</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">8:00 - 8:30</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><a class="uk-link" uk-toggle="target: #edit-modal">2:00 - 3:00</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5:00 PM</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="new-modal" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Create New Appointment</h2>
+        </div>
+        <div class="uk-modal-body">
+            <form>
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="subject">Subject</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="subject" type="text" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="attendees">Attendees</label>
+                        <div class="uk-form-controls">
+                            <select multiple class="uk-select" id="attendees">
+                                <option value="1">Test Attendee 1</option>
+                                <option value="2" selected>Test Attendee 2</option>
+                                <option value="3">Test Attendee 3</option>
+                                <option value="4" selected>Test Attendee 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="duration">Duration</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="duration">
+                                <option value="1">15 minutes</option>
+                                <option value="2">30 minutes</option>
+                                <option value="3">1 hour</option>
+                                <option value="4">2 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="date">Suggested Date and Time</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="date" type="date" value="2017-12-25">
+                        </div>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="time" type="time" value="10:30">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="voting">Enable Voting</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-checkbox" id="voting" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="body">Body</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" id="body" rows="3" placeholder="Body of the appointment"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <a class="uk-button uk-button-default uk-modal-close">Cancel</a>
+            <a class="uk-button uk-button-primary uk-modal-close">Create</a>
+        </div>
+    </div>
+</div>
+
+<div id="edit-modal" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Edit Appointment</h2>
+        </div>
+        <div class="uk-modal-body">
+            <form>
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="subject">Subject</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="subject" type="text" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="attendees">Attendees</label>
+                        <div class="uk-form-controls">
+                            <select multiple class="uk-select" id="attendees">
+                                <option value="1">Test Attendee 1</option>
+                                <option value="2" selected>Test Attendee 2</option>
+                                <option value="3">Test Attendee 3</option>
+                                <option value="4" selected>Test Attendee 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="duration">Duration</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="duration">
+                                <option value="1">15 minutes</option>
+                                <option value="2" selected>30 minutes</option>
+                                <option value="3">1 hour</option>
+                                <option value="4">2 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="date">Suggested Date and Time</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="date" type="date" value="2017-12-25">
+                        </div>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="time" type="time" value="10:30">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="body">Body</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" id="body" rows="3" placeholder="Body of the appointment"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <a class="uk-button uk-button-danger uk-modal-close">Delete</a>
+            <a class="uk-button uk-button-default uk-modal-close">Cancel</a>
+            <a class="uk-button uk-button-primary uk-modal-close">Update</a>
+        </div>
+    </div>
+</div>
+
+<div id="conference-modal" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Conference Room Lookup</h2>
+        </div>
+        <div class="uk-modal-body">
+            <form>
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="attendees">Number of Attendees</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="attendees" type="number">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="duration">Duration</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="duration">
+                                <option value="1">15 minutes</option>
+                                <option value="2" selected>30 minutes</option>
+                                <option value="3">1 hour</option>
+                                <option value="4">2 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="date">Date and Time</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="date" type="date">
+                        </div>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="time" type="time">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="uk-modal-footer uk-text-right" *ngIf="!searchResults">
+            <a class="uk-button uk-button-default uk-modal-close">Cancel</a>
+            <a class="uk-button uk-button-primary" uk-toggle="target: #results-modal">Search</a>
+        </div>
+    </div>
+</div>
+
+<div id="results-modal" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Conference Room Search Results</h2>
+        </div>
+        <div class="uk-modal-body">
+            <ul class="uk-list uk-list-bullet">
+                <li>
+                    <p>
+                        <strong>Conference Room A</strong>
+                        <br>
+                        Attendees: 10
+                        <br>
+                        Video/Audio Conference Enabled
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Conference Room C</strong>
+                        <br>
+                        Attendees: 15
+                        <br>
+                        Video/Audio Conference Enabled
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Conference Room D</strong>
+                        <br>
+                        Attendees: 12
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <a class="uk-button uk-button-default uk-modal-close">Close</a>
+        </div>
+    </div>
+</div>

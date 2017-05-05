@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* Font Awesome */
+@import '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* ArcGIS for JavaScript API */
+@import '//js.arcgis.com/4.3/esri/css/main.css';
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.uk-navbar-toggle {
+    color: #fff;
+}
+.uk-navbar-toggle:focus, .uk-navbar-toggle:hover {
+    color: #eee;
+}
+.uk-logo {
+    color: #fff;
+}
+.uk-logo:focus, .uk-logo:hover {
+    color: #eee;
+}
+.uk-navbar-nav>li>a {
+    color: #fff;
+}
+.uk-navbar-nav>li>a:focus, .uk-navbar-nav>li>a:hover {
+    color: #eee;
+}
